@@ -1,7 +1,5 @@
-/* Author: FelixSchlatter.com
-*/
-
 $(document).ready(function(){
+
 
 $('#slider').cycle({ 
     fx:      'fade',  //scrollHorz  fade
@@ -45,6 +43,7 @@ function () {
 $('.subnavpunkt').click(function() {
  $('#slider').cycle('pause');
 });
+
 
 $('.subnavpunkt').click(function() {
  $('#slider_firma').cycle('pause');
@@ -121,12 +120,6 @@ $('.main-aktion-bild-animation').hover(
 	$('.main-aktion-bild-open').hide();
 });
     
-// Popup
-    
-$('#popup-corona').click(function(){
-    $('#popup-corona').hide();
-});
-
 
 });
 

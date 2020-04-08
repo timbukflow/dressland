@@ -412,7 +412,7 @@ outline: none !important;
 /* =========================================================
    Corona: Autor Ivo Schwizer
    ========================================================= */
-#popup-corona {
+#popupcorona {
     display: block; 
     position: absolute; 
     z-index: 999;
@@ -425,8 +425,7 @@ outline: none !important;
     cursor: pointer;
 }
 
-#popup-corona img:nth-child(1) {
-    position: relative;
+#popupcorona img {
     width: 40%;
     padding: 2%
 }
