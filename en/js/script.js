@@ -81,6 +81,12 @@ function () {
 	$(this).stop().animate({left: '-237px'},{duration: '500',easing: 'easeOutCirc'});
  });
 
+// Popup
+    
+$('#popup-corona').click(function(){
+    $('#popup-corona').hide();
+});
+
 
 
 
