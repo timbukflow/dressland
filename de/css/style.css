@@ -1,0 +1,521 @@
+/* 
+ * HTML5 ✰ Boilerplate
+ *
+ * What follows is the result of much research on cross-browser styling. 
+ * Credit left inline and big thanks to Nicolas Gallagher, Jonathan Neal,
+ * Kroc Camen, and the H5BP dev community and team.
+ *
+ * Detailed information about this CSS: h5bp.com/css
+ * 
+ * ==|== normalize ==========================================================
+ */
+
+
+/* =============================================================================
+   HTML5 display definitions
+   ========================================================================== */
+
+article, aside, details, figcaption, figure, footer, header, hgroup, nav, section { display: block; }
+audio, canvas, video { display: inline-block; *display: inline; *zoom: 1; }
+audio:not([controls]) { display: none; }
+[hidden] { display: none; }
+
+/* =============================================================================
+   Base
+   ========================================================================== */
+
+/*
+ * 1. Correct text resizing oddly in IE6/7 when body font-size is set using em units
+ * 2. Force vertical scrollbar in non-IE
+ * 3. Prevent iOS text size adjust on device orientation change, without disabling user zoom: h5bp.com/g
+ */
+
+html { font-size: 100%; overflow-y: scroll; -webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; }
+
+body { margin: 0; font-size: 13px; line-height: 1.231; }
+
+body, button, input, select, textarea { font-family: sans-serif; color: #222; }
+
+/* 
+ * Remove text-shadow in selection highlight: h5bp.com/i
+ * These selection declarations have to be separate
+ * Also: hot pink! (or customize the background color to match your design)
+ */
+
+::-moz-selection { background: #ccc; color: #fff; text-shadow: none; }
+::selection { background: #ccc; color: #fff; text-shadow: none; }
+
+
+/* =============================================================================
+   Links
+   ========================================================================== */
+
+a { color: #00e; }
+a:visited { color: #551a8b; }
+a:hover { color: #06e; }
+a:focus { outline: thin dotted; }
+
+/* Improve readability when focused and hovered in all browsers: h5bp.com/h */
+a:hover, a:active { outline: 0; }
+
+
+/* =============================================================================
+   Typography
+   ========================================================================== */
+
+abbr[title] { border-bottom: 1px dotted; }
+
+b, strong { font-weight: bold; }
+
+blockquote { margin: 1em 40px; }
+
+dfn { font-style: italic; }
+
+hr { display: block; height: 1px; border: 0; border-top: 1px solid #ccc; margin: 1em 0; padding: 0; }
+
+ins { background: #ff9; color: #000; text-decoration: none; }
+
+mark { background: #ff0; color: #000; font-style: italic; font-weight: bold; }
+
+/* Redeclare monospace font family: h5bp.com/j */
+pre, code, kbd, samp { font-family: monospace, monospace; _font-family: 'courier new', monospace; font-size: 1em; }
+
+/* Improve readability of pre-formatted text in all browsers */
+pre { white-space: pre; white-space: pre-wrap; word-wrap: break-word; }
+
+q { quotes: none; }
+q:before, q:after { content: ""; content: none; }
+
+small { font-size: 85%; }
+
+/* Position subscript and superscript content without affecting line-height: h5bp.com/k */
+sub, sup { font-size: 75%; line-height: 0; position: relative; vertical-align: baseline; }
+sup { top: -0.5em; }
+sub { bottom: -0.25em; }
+
+
+/* =============================================================================
+   Lists
+   ========================================================================== */
+
+ul, ol { margin: 1em 0; padding: 0 0 0 40px; }
+dd { margin: 0 0 0 40px; }
+nav ul, nav ol { list-style: none; list-style-image: none; margin: 0; padding: 0; }
+
+
+/* =============================================================================
+   Embedded content
+   ========================================================================== */
+
+/*
+ * 1. Improve image quality when scaled in IE7: h5bp.com/d
+ * 2. Remove the gap between images and borders on image containers: h5bp.com/e 
+ */
+
+img { border: 0; -ms-interpolation-mode: bicubic; vertical-align: middle; }
+
+/*
+ * Correct overflow not hidden in IE9 
+ */
+
+svg:not(:root) { overflow: hidden; }
+
+
+/* =============================================================================
+   Figures
+   ========================================================================== */
+
+figure { margin: 0; }
+
+
+/* =============================================================================
+   Forms
+   ========================================================================== */
+
+form { margin: 0; }
+fieldset { border: 0; margin: 0; padding: 0; }
+
+/* Indicate that 'label' will shift focus to the associated form element */
+label { cursor: pointer; }
+
+/* 
+ * 1. Correct color not inheriting in IE6/7/8/9 
+ * 2. Correct alignment displayed oddly in IE6/7 
+ */
+
+legend { border: 0; *margin-left: -7px; padding: 0; }
+
+/*
+ * 1. Correct font-size not inheriting in all browsers
+ * 2. Remove margins in FF3/4 S5 Chrome
+ * 3. Define consistent vertical alignment display in all browsers
+ */
+
+button, input, select, textarea { font-size: 100%; margin: 0; vertical-align: baseline; *vertical-align: middle; }
+
+/*
+ * 1. Define line-height as normal to match FF3/4 (set using !important in the UA stylesheet)
+ * 2. Correct inner spacing displayed oddly in IE6/7
+ */
+
+button, input { line-height: normal; *overflow: visible; }
+
+/*
+ * Reintroduce inner spacing in 'table' to avoid overlap and whitespace issues in IE6/7
+ */
+
+table button, table input { *overflow: auto; }
+
+/*
+ * 1. Display hand cursor for clickable form elements
+ * 2. Allow styling of clickable form elements in iOS
+ */
+
+button, input[type="button"], input[type="reset"], input[type="submit"] { cursor: pointer; -webkit-appearance: button; }
+
+/*
+ * Consistent box sizing and appearance
+ */
+
+input[type="checkbox"], input[type="radio"] { box-sizing: border-box; }
+input[type="search"] { -webkit-appearance: textfield; -moz-box-sizing: content-box; -webkit-box-sizing: content-box; box-sizing: content-box; }
+input[type="search"]::-webkit-search-decoration { -webkit-appearance: none; }
+
+/* 
+ * Remove inner padding and border in FF3/4: h5bp.com/l 
+ */
+
+button::-moz-focus-inner, input::-moz-focus-inner { border: 0; padding: 0; }
+
+/* 
+ * 1. Remove default vertical scrollbar in IE6/7/8/9 
+ * 2. Allow only vertical resizing
+ */
+
+textarea { overflow: auto; vertical-align: top; resize: vertical; }
+
+/* Colors for form validity */
+input:valid, textarea:valid {  }
+input:invalid, textarea:invalid { background-color: #f0dddd; }
+
+
+/* =============================================================================
+   Tables
+   ========================================================================== */
+
+table { border-collapse: collapse; border-spacing: 0; }
+td { vertical-align: top; }
+
+
+/* ==|== primary styles =====================================================
+   Author: felixschlatter.com
+   ========================================================================== */
+
+
+body {background-image:url(../img/Hintergrund_Schwarz.png);background-repeat:repeat;background-color:#000;
+	font-family: 'Arial', sans-serif;color:#ccc;font-weight:11px;font-weight:normal;}
+a {color:#ccc;text-decoration:none;}	
+a:hover {color:#c00;}
+#container {
+	width:100%;
+	height:100%;
+	}
+header {height:68px;width:980px;padding-top:22px;margin-left:auto;margin-right:auto;}
+.inner {width:980px;margin-left:auto;margin-right:auto;background-image:none !important;background:none;}
+#oben {height:360px;}
+#oben-aktion {height:520px;position:relative;}
+#unten {height:500px;background-color:#fff;}
+.outer {background-color:#fff;width:100%;}	
+
+
+nav {height:20px;float:left;}
+.navpunkt {float:left; margin-right:20px;}
+.navpunkt a { text-decoration:none; color:#ccc;}
+.navpunkt a:hover {color:#c00;}
+.contacter {height:20px;float:right;text-align:right;margin-right:8px;}
+h1 {font-family:helvetica,sans-serif;color:#ccc;font-weight:normal;}
+h2, h3 {font-family: 'PT Serif', serif;color:#ccc;font-weight:normal;}
+h1 span {color:#c00;}
+a.current {color:#c00 !important;}
+
+#logo_dressland {background-image:url(../img/Logo_Dressland.png);background-repeat:no-repeat;width:43px;height:207px;float:right;position:absolute:right:0px;}
+.contacter a:hover {color:#c00;}
+
+.text {height:250px;}
+.supertitel {margin-bottom:20px;width:915px;}
+.supertitel h1 {font-size:46px;padding:0px;margin:0px;}
+.lauftext h2, .lauftext h2 a {font-size:24px;color:#c00;font-weight:normal;padding:0px;margin:0px;line-height:33px;}
+.lauftext h3 {font-size:24px;color:#ccc;font-weight:normal;padding:0px;margin:0px;line-height:33px;}
+.lauftext-jobs {margin-right:20px;width:440px; line-height: 18px;}
+.leftytext {float:left;margin-right:20px;width:440px; line-height: 18px;}
+
+.katalog {width:220px;height:297px; overflow:hidden;float:left;margin-right:30px;margin-bottom: 30px;background-image:url(../img/loading.gif);background-repeat:no-repeat;background-position:center 50px;}
+.katalog div {margin-left:-100px;}
+.kleiner {height:180px;}
+.klein {height:210px;}
+.normal {height:297px;}
+.spacer {width:900px;height:100px;clear:both;float:none;}
+
+#subnav {height:140px;width:990px;bottom:0px;}
+.subnavpunkt {height:100px;float:left;margin-right:30px;font-family: 'PT Serif', serif;font-size:17px;}
+.subnavpunkt a {text-decoration:none;color:#ccc;}
+.subnavpunkt a span {font-size:21px;}
+.subnavpunkt img {margin-top:-5px;margin-right:20px;float:left;}
+
+#slider, #slider_firma {height:500px;width:990px;font-size:24px;}
+.subnavcontent {width:100%;height:100%;}
+.sliding {width:990px;height:500px;}
+
+.activeSlide a{color:#c00!important;}
+
+#slide1 {background-image:url(../img/arrow_down.png);background-repeat:no-repeat;background-position:30px 0px;}
+#slide2 {background-image:url(../img/arrow_down.png);background-repeat:no-repeat;background-position:335px 0px;}
+#slide3 {background-image:url(../img/arrow_down.png);background-repeat:no-repeat;background-position:630px 0px;}
+#slide4 {background-image:url(../img/arrow_down.png);background-repeat:no-repeat;background-position:830px 0px;}
+#slide5 {background-image:url(../img/arrow_down.png);background-repeat:no-repeat;background-position:930px 0px;}
+#slide6 {background-image:url(../img/arrow_down.png);background-repeat:no-repeat;background-position:930px 0px;}
+.lefts {float:left;}
+
+.headlineslider {margin-top: 50px;border-bottom: 1px dashed #000;width:435px;padding-bottom:10px;font-family: 'PT Serif', serif;font-size:28px;color:#F70000;}
+.contentslider {font-size:13px;padding-top:10px;width:435px;color:#000;line-height:18px;}
+.contentslider_wide {font-size:13px;padding-top:10px;color:#000;line-height:18px;}
+.headlineslider_wide {margin-top: 50px;border-bottom: 1px dashed #000;width:900px;padding-bottom:10px;font-family: 'PT Serif', serif;font-size:28px;color:#F70000;}
+.contentslider a {color:#F70000;text-decoration:none:}
+
+.headlineslider span, .headlineslider_wide span {color:#333;}
+
+.leftytext ul.nomarg {margin-top:0px;}
+.leftytext ul li {}
+
+.team {
+	width:240px; 	/*  für 4 mitarbeiter -- */
+	/* width:300px; --- für 3 mitarbeiter -- */
+	float:left;font-family: 'Arial', sans-serif;color:#333;font-size:13px;margin-top:50px;height:450px;}
+.team h1 {font-family: 'PT Serif', serif;font-size:24px;color:#333;}
+.team a {color:#333;}
+.team img {position:relative !important;bottom:0px;background-image:url(../img/loading.gif);background-repeat:no-repeat;background-position:center center;}
+
+.kontakt {width:230px;float:left;font-family: 'Arial', sans-serif;color:#ccc;font-size:13px;}
+.kontakt h1 {font-family: 'PT Serif', serif;font-size:24px;color:#c00;}
+.kontakt a {color:#ccc;}
+
+#bruno	{background-image:url(../img/firma_ansprechperson_bruno.png);background-repeat:no-repeat;background-position:-10px bottom;}
+#oso	{background-image:url(../img/firma_ansprechperson_sascha.png);background-repeat:no-repeat;background-position:-10px bottom;}
+
+.sliding img {float:right;margin-top:50px;position:absolute;bottom:0px;right:0px;}
+.sliding img.middler {float:left;margin-top:50px;position:absolute;left:0px;}
+
+.shadowbutton {width:auto;height:28px;margin-top:20px;width:435px;}
+.b1 {background-image:url(../img/b1.png);background-repeat:no-repeat;float:left;width:10px;height:28px;}
+.b2 {background-image:url(../img/b2.png);background-repeat:no-repeat;float:left;width:auto;height:28px;font-size:13px;padding-top:5px;}
+.b3 {background-image:url(../img/b3.png);background-repeat:no-repeat;float:left;width:10px;height:28px;}
+.b2 a {color:#333;text-decoration:none;}
+.shadowbutton * a:hover {color:#c00;}
+
+
+
+.shadowbutton a {font-size:13px;color:#333;}
+
+.ie8 .outer {background-image:none; background-color:#f5f5f5;}	
+.ie7 .outer {background-image:none; background-color:#f5f5f5;}	
+
+a, a:active, a:focus
+{
+-moz-outline-style: none !important;
+outline: none !important;
+}
+
+/* =========================================================
+   Regenschirm-Aktion: Autor Ivo Schwizer
+   ========================================================= */
+
+.main-aktion-bild{
+	z-index:1;
+	position: absolute;
+    right: 60px;
+    top: 13px;
+	display:block;
+}
+.main-aktion-bild-open{
+	z-index:2;
+	position: absolute;
+    right: -174px;
+    top: -168px;
+	display:none;
+}
+.main-aktion-bild-animation{
+    background-color: #fff;
+  	opacity: 0;
+  	filter: alpha(opacity=1);
+    height: 400px;
+    position: absolute;
+    right: 98px;
+    top: 5px;
+    width: 375px;
+    z-index: 3;
+}
+#Aktion-button {
+	z-index:999;
+	padding: 10px 9px 10px 10px;
+	position:absolute;
+	left:-51px;
+	top:140px;
+	background-color:#c00;
+	color:#fff;
+	width:65px;
+}
+.aktion {
+	float:right;
+	padding-top:1px;
+}
+.aktion-img {
+	float:right;
+	padding-left: 8px;
+}
+
+#aktion-bilder-galerie-container{
+	width:990px;
+	margin-left:auto;
+	margin-right:auto;
+}
+
+.aktion-bilder-galerie{
+ 	float: left;
+    padding: 3px 3px 0;
+    width: 324px;
+	overflow:hidden;
+	position:relative;
+}
+
+.aktion-information{
+    position: absolute;
+    width:330px;
+	height:250px;
+	color:#fff;
+	bottom:-250px;
+	background-color:#000;
+	opacity: 0;
+
+}
+.aktion-p{
+   	font-family: 'PT Serif', serif;
+	font-size:22px;
+	color:#ccc;
+    margin: 0;
+    opacity: 0;
+    padding-left: 40px;
+	padding-right: 40px;
+    padding-top: 63px;
+	
+}
+
+/* =========================================================
+   Regenschirm-Aktion: Autor Ivo Schwizer ENDE
+   ========================================================= */
+
+
+/* =========================================================
+   Facebook-Aktion: Autor Ivo Schwizer
+   ========================================================= */
+
+#facebook-button {
+	z-index:999;
+	padding: 10px 9px 10px 10px;
+	position:absolute;
+	left:-74px;
+	top:184px;
+	background-color:#c00;
+	color:#fff;
+	width:88px;
+}
+
+/* =========================================================
+   Facebook-Aktion: Autor Ivo Schwizer ENDE
+   ========================================================= */
+
+#LanguageChooser {
+	z-index:999;
+	padding: 10px;
+	position:absolute;
+	left:-237px;
+	top:100px;
+	background-color:#c00;
+	width:250px;
+	color:#fff;
+}
+.LangLeft {
+	float:right;
+	padding-left:5px;
+}
+
+
+/* ==|== non-semantic helper classes ========================================
+   Please define your styles before this section.
+   ========================================================================== */
+
+/* For image replacement */
+.ir { display: block; border: 0; text-indent: -999em; overflow: hidden; background-color: transparent; background-repeat: no-repeat; text-align: left; direction: ltr; }
+.ir br { display: none; }
+
+/* Hide from both screenreaders and browsers: h5bp.com/u */
+.hidden { display: none !important; visibility: hidden; }
+
+/* Hide only visually, but have it available for screenreaders: h5bp.com/v */
+.visuallyhidden { border: 0; clip: rect(0 0 0 0); height: 1px; margin: -1px; overflow: hidden; padding: 0; position: absolute; width: 1px; }
+
+/* Extends the .visuallyhidden class to allow the element to be focusable when navigated to via the keyboard: h5bp.com/p */
+.visuallyhidden.focusable:active, .visuallyhidden.focusable:focus { clip: auto; height: auto; margin: 0; overflow: visible; position: static; width: auto; }
+
+/* Hide visually and from screenreaders, but maintain layout */
+.invisible { visibility: hidden; }
+
+/* Contain floats: h5bp.com/q */ 
+.clearfix:before, .clearfix:after { content: ""; display: table; }
+.clearfix:after { clear: both; }
+.clearfix { zoom: 1; }
+
+
+
+/* ==|== media queries ======================================================
+   PLACEHOLDER Media Queries for Responsive Design.
+   These override the primary ('mobile first') styles
+   Modify as content requires.
+   ========================================================================== */
+
+@media only screen and (max-width: 1100px) {
+  #LanguageChooser,.LangLeft, #Aktion-button, #facebook-button {
+	display:none;
+	}
+	#oben,#unten,header{
+		padding-left:20px;
+		padding-right:20px;
+	}
+
+}
+
+@media only screen and (min-width: 768px) {
+  /* Style adjustments for viewports 768px and over go here */
+
+}
+
+
+
+/* ==|== print styles =======================================================
+   Print styles.
+   Inlined to avoid required HTTP connection: h5bp.com/r
+   ========================================================================== */
+ 
+@media print {
+  * { background: transparent !important; color: black !important; text-shadow: none !important; filter:none !important; -ms-filter: none !important; } /* Black prints faster: h5bp.com/s */
+  a, a:visited { text-decoration: underline; }
+  a[href]:after { content: " (" attr(href) ")"; }
+  abbr[title]:after { content: " (" attr(title) ")"; }
+  .ir a:after, a[href^="javascript:"]:after, a[href^="#"]:after { content: ""; }  /* Don't show links for images, or javascript/internal links */
+  pre, blockquote { border: 1px solid #999; page-break-inside: avoid; }
+  thead { display: table-header-group; } /* h5bp.com/t */
+  tr, img { page-break-inside: avoid; }
+  img { max-width: 100% !important; }
+  @page { margin: 0.5cm; }
+  p, h2, h3 { orphans: 3; widows: 3; }
+  h2, h3 { page-break-after: avoid; }
+}
