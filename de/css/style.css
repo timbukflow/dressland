@@ -300,6 +300,7 @@ a.current {color:#c00 !important;}
 .kontakt a {color:#ccc;}
 
 #bruno	{background-image:url(../img/firma_ansprechperson_bruno.png);background-repeat:no-repeat;background-position:-10px bottom;}
+#frank	{background-image:url(../img/firma_ansprechperson_frank.png);background-repeat:no-repeat;background-position:-10px bottom;}
 #oso	{background-image:url(../img/firma_ansprechperson_sascha.png);background-repeat:no-repeat;background-position:-10px bottom;}
 
 .sliding img {float:right;margin-top:50px;position:absolute;bottom:0px;right:0px;}
