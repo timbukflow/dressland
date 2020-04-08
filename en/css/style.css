@@ -294,6 +294,7 @@ a.current {color:#c00 !important;}
 .kontakt a {color:#ccc;}
 
 #bruno	{background-image:url(../img/firma_ansprechperson_bruno.png);background-repeat:no-repeat;background-position:-10px bottom;}
+#frank	{background-image:url(../img/firma_ansprechperson_frank.png);background-repeat:no-repeat;background-position:-10px bottom;}
 #oso	{background-image:url(../img/firma_ansprechperson_sascha.png);background-repeat:no-repeat;background-position:-10px bottom;}
 
 .sliding img {float:right;margin-top:50px;position:absolute;bottom:0px;right:0px;}
@@ -340,25 +341,22 @@ outline: none !important;
 /* =========================================================
    Corona: Autor Ivo Schwizer
    ========================================================= */
-#popup-corona {
+#popupcorona {
     display: block; 
     position: absolute; 
     z-index: 999;
     left: 0;
     top: 0;
-    width: 100%; /* Full width */
-    height: 100%; /* Full height */
+    width: 100%;
     background-color: rgba(0,0,0,0.5);
     text-align: center;
     cursor: pointer;
 }
 
-#popup-corona img:nth-child(1) {
-    position: relative;
+#popupcorona img {
     width: 40%;
     padding: 2%
 }
-    
 
 /* ==|== non-semantic helper classes ========================================
    Please define your styles before this section.

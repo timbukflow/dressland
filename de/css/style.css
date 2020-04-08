@@ -419,8 +419,7 @@ outline: none !important;
     z-index: 999;
     left: 0;
     top: 0;
-    width: 100%; /* Full width */
-    height: 100%; /* Full height */
+    width: 100%;
     background-color: rgba(0,0,0,0.5);
     text-align: center;
     cursor: pointer;
