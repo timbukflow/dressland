@@ -410,8 +410,27 @@ outline: none !important;
 }
 
 /* =========================================================
-   Regenschirm-Aktion: Autor Ivo Schwizer ENDE
+   Corona: Autor Ivo Schwizer
    ========================================================= */
+#popup-corona {
+    display: block; 
+    position: absolute; 
+    z-index: 999;
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    background-color: rgba(0,0,0,0.5);
+    text-align: center;
+    cursor: pointer;
+}
+
+#popup-corona img:nth-child(1) {
+    position: relative;
+    width: 40%;
+    padding: 2%
+}
+    
 
 
 /* =========================================================

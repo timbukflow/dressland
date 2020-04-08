@@ -34,9 +34,6 @@ $('#slider_firma').cycle({
 });
 
 
-
-
-
 $('.subnavpunkt').hover(
 	function () { 
  	$(this).stop().fadeTo('fast', 0.5);
@@ -122,6 +119,12 @@ $('.main-aktion-bild-animation').hover(
 	function(){ 
  	$('.main-aktion-bild').show();
 	$('.main-aktion-bild-open').hide();
+});
+    
+// Popup
+    
+$('#popup-corona').click(function(){
+    $('#popup-corona').hide();
 });
 
 
