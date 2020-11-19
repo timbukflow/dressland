@@ -326,6 +326,22 @@ a, a:active, a:focus
 outline: none !important;
 }
 
+.alltagsmaske {
+    padding: 20px 40px;
+    background-color: #FFDC00;
+    color: #000;
+    font-size: 20px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.alltagsmaske:hover   {
+    color: #ff0000;
+    font-size: 20px;
+}
+
+
+
 /* =========================================================
    Regenschirm-Aktion: Autor Ivo Schwizer
    ========================================================= */
